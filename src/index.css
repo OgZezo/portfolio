@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cal Sans — baixe em https://github.com/calcom/font e coloque em /public/fonts/ */
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121211;
+  color: #ffffff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* Glow utilitário para títulos */
+.text-glow {
+  text-shadow: 0 4px 20px rgba(255, 185, 0, 0.25);
+}
+
+/* ── Fade + slide animations ── */
+
+/* base: invisible, pronto para animar */
+.anim-base {
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+/* esquerda → direita */
+.anim-from-left  { transform: translateX(-40px); }
+/* direita → esquerda */
+.anim-from-right { transform: translateX(40px); }
+/* só fade */
+.anim-fade       { transform: translateX(0); }
+
+/* quando a classe .visible é adicionada */
+.anim-base.visible {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+/* delays escalonados */
+.delay-100 { transition-delay: 0.10s; }
+.delay-200 { transition-delay: 0.20s; }
+.delay-300 { transition-delay: 0.30s; }
+.delay-400 { transition-delay: 0.40s; }
+.delay-500 { transition-delay: 0.50s; }
+.delay-700 { transition-delay: 0.70s; }
+.delay-900 { transition-delay: 0.90s; }
+
+/* ── Scroll-cue bounce ── */
+@keyframes bounce-cue {
+  0%, 100% { transform: rotate(180deg) translateY(0);   opacity: 1; }
+  40%       { transform: rotate(180deg) translateY(8px); opacity: 1; }
+  60%       { transform: rotate(180deg) translateY(4px); opacity: 1; }
+}
+
+/* para o cue vertical-rl (role para cima) sem rotate 180 */
+@keyframes bounce-cue-up {
+  0%, 100% { transform: translateY(0);   opacity: 1; }
+  40%       { transform: translateY(-8px); opacity: 1; }
+  60%       { transform: translateY(-4px); opacity: 1; }
+}
+
+.scroll-cue {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.scroll-cue.cue-visible {
+  opacity: 1;
+}
+.scroll-cue.cue-bounce {
+  animation: bounce-cue 0.5s ease 0s 2;
+}
+.scroll-cue-up.cue-bounce {
+  animation: bounce-cue-up 0.5s ease 0s 2;
+}
+
+/* ── Typewriter cursor ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #FBD15B;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  animation: blink 0.75s step-end infinite;
+}
+
+/* ── Carousel slide ── */
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.card-slide-left  { animation: slide-in-left  0.35s ease forwards; }
+.card-slide-right { animation: slide-in-right 0.35s ease forwards; }
+
+/* ── Carousel fluid transitions ── */
+@keyframes card-exit-left {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-80px); }
+}
+@keyframes card-exit-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(80px); }
+}
+@keyframes card-enter-left {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes card-enter-right {
+  from { opacity: 0; transform: translateX(80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.card-exit-left   { animation: card-exit-left  0.35s ease forwards; }
+.card-exit-right  { animation: card-exit-right 0.35s ease forwards; }
+.card-enter-left  { animation: card-enter-left  0.35s ease forwards; }
+.card-enter-right { animation: card-enter-right 0.35s ease forwards; }
