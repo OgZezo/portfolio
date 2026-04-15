@@ -10,7 +10,7 @@ interface ProjectCardData {
 }
 
 const PROJECTS: ProjectCardData[] = [
-  { id: 1, title: "NEXUS-IT" },
+  { id: 1, title: "NEXUS IT" },
   { id: 2, title: "PROJETO 2" },
   { id: 3, title: "PROJETO 3" },
   { id: 4, title: "PROJETO 4" },
@@ -18,7 +18,7 @@ const PROJECTS: ProjectCardData[] = [
   { id: 6, title: "PROJETO 6" },
 ];
 
-const CARD_COLORS = ["#A89A68", "#A89A68", "#A89A68", "#A89A68", "#A89A68", "#A89A68"];
+const CARD_COLORS = ["#ffffff", "#A89A68", "#A89A68", "#A89A68", "#A89A68", "#A89A68"];
 
 export default function Projetos() {
 
