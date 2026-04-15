@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Contato from "./pages/Contato";
 import Projetos from "./pages/Projetos";
 import Sobremim from "./pages/SobreMim";
-import Projeto1 from "./pages/projeto1";
+import Projeto1 from "./pages/Projeto1";
 
 export default function App() {
   return (
