@@ -49,7 +49,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
 
         {/* Corpo do Menu (Sintaxe de Código) */}
         <div className="mt-5 flex flex-col flex-1">
-          <p className="text-[#FBD15B] font-display font-bold text-3xl mb-4">
+          <p className="text-[#FBD15B] font-bold text-3xl mb-4"
+          style={{fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif"}}>
             menu{"{"}
           </p>
 
@@ -59,7 +60,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                 key={link.label}
                 to={link.to}
                 onClick={onClose} // Fecha o menu ao clicar em um link
-                className="group font-display font-bold text-3xl md:text-4xl tracking-wide w-max"
+                className="group font-bold text-3xl md:text-4xl tracking-wide w-max"
+                style={{fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif"}}
               >
                 {/* O símbolo < em branco */}
                 <span className="text-white group-hover:text-[#FBD15B] transition-colors">

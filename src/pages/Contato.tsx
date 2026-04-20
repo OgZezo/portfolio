@@ -21,11 +21,9 @@ export default function Contato() {
 
       {/* ── Título Central ── */}
       <header className="text-center py-5 md:py-7">
-        <h1 
-          className="text-5xl md:text-7xl text-white drop-shadow-[0_0_20px_rgba(251,209,91,0.35)] tracking-tight" 
-          style={{fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif", letterSpacing: "-0.01em"}}
-        >
-          &lt;<span style={{color: "#FBD15B"}}>Contatos</span>&gt;
+        <h1 className="text-white font-bold text-[clamp(3rem,8vw,5rem)] mb-10 tracking-tight" style={{fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif", letterSpacing: "-0.01em"}}>
+
+          &lt;<span className="text-[#FBD15B] drop-shadow-[0_0_20px_rgba(251,209,91,0.35)]">Contatos</span>&gt;
         </h1>
       </header>
 
