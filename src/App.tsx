@@ -11,7 +11,9 @@ import Contato from "./pages/Contato";
 import Projetos from "./pages/Projetos";
 import Sobremim from "./pages/SobreMim";
 import Projeto1 from "./pages/Projeto1";
-import Projeto2 from "./pages/Projeto2";
+import Projeto2 from "./pages/Projeto2";    
+import Projeto3 from "./pages/Projeto3";
+import Projeto4 from "./pages/Projeto4";
 
 export default function App() {
   return (
@@ -39,6 +41,12 @@ export default function App() {
         {/* Rota para detalhes de projetos (exemplo) */}
 
         <Route path="/projeto2" element={<Projeto2 />} />
+        {/* Rota para detalhes de projetos (exemplo) */}
+
+        <Route path="/projeto3" element={<Projeto3 />} />
+        {/* Rota para detalhes de projetos (exemplo) */}
+
+        <Route path="/projeto4" element={<Projeto4 />} />
         {/* Rota para detalhes de projetos (exemplo) */}
 
         {/* <Route path="*" element={<NotFoundPage />} /> --- IGNORE --- */}

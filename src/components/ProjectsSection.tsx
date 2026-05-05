@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const PROJECTS = [
   { id: 1, name: "NEXUS IT" },
-  { id: 2, name: "PROJETO 2" },
-  { id: 3, name: "PROJETO 3" },
+  { id: 2, name: "KawaCoffee" },
+  { id: 3, name: "Grupo Opus" },
 ];
 
 // O ideal é que essas cores venham do seu banco ou de variáveis do Tailwind depois

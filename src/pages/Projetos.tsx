@@ -11,14 +11,14 @@ interface ProjectCardData {
 
 const PROJECTS: ProjectCardData[] = [
   { id: 1, title: "NEXUS IT" },
-  { id: 2, title: "PROJETO 2" },
-  { id: 3, title: "PROJETO 3" },
+  { id: 2, title: "KawaCoffee" },
+  { id: 3, title: "Grupo Opus" },
   { id: 4, title: "PROJETO 4" },
   { id: 5, title: "PROJETO 5" },
   { id: 6, title: "PROJETO 6" },
 ];
 
-const CARD_COLORS = ["#ffffff", "#A89A68", "#A89A68", "#A89A68", "#A89A68", "#A89A68"];
+const CARD_COLORS = ["#ffffff", "#ffffff", "#A89A68", "#A89A68", "#A89A68", "#A89A68"];
 
 export default function Projetos() {
 
@@ -57,21 +57,22 @@ export default function Projetos() {
       aria-label={project.title}
     >
       {/* 👇 ESTRUTURA DE IMAGEM PRONTA (Descomente quando tiver as fotos) 👇 */}
-      {/* <img 
-          src={`/images/project-${project.id}.png`} 
+      <img 
+          src={`/projetos_capa/projeto${project.id}_bg.png`} 
           alt={project.title} 
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/20" />
-      */}
+        <div className="absolute inset-0 transition-colors duration-300" />
+     
 
       {/* Título do Projeto */}
-      <h2 
+      {/* <h2 
         className="relative z-10 text-3xl md:text-4xl text-[#121211] font-bold transition-transform duration-300 group-hover:scale-110 drop-shadow-sm text-center px-4"
         style={{ fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif" }}
       >
         {project.title}
-      </h2>
+      </h2> */}
+      
     </Link>
   );
 
