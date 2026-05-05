@@ -59,10 +59,10 @@ export default function HeroSection() {
       <Sidebar isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
       {/* ── Navbar ── */}
+      {/* ── Navbar ── */}
       <nav className="flex items-center justify-between px-6 md:px-10 pt-7 pb-4 z-20">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          // Aumento da área de toque no mobile (p-2 e -ml-2 para manter alinhamento visual)
           className="flex flex-col gap-[6px] p-2 -ml-2"
           aria-label="Menu"
         >
@@ -73,7 +73,6 @@ export default function HeroSection() {
 
         <Link
           to="/curriculo"
-          // py-3 no mobile para melhor touch target, py-2 no md
           className="px-5 py-3 md:py-2 text-xs font-bold tracking-[0.2em] uppercase border border-[#FBD15B] text-white hover:bg-[#FBD15B] hover:text-[#121211] transition-colors"
           style={{ fontFamily: "'Fira Sans Condensed', sans-serif" }}
         >
@@ -82,13 +81,12 @@ export default function HeroSection() {
       </nav>
 
       {/* ── Social Sidebar (Desktop) ── */}
-      {/* Escondido no mobile (hidden md:flex) para evitar sobreposição com o texto */}
-      <div className="hidden md:flex absolute left-8 lg:left-10 top-1/2 -translate-y-1/2 flex-col gap-6 z-10">
+      {/* CORREÇÃO: Mudado de z-10 para z-20 para garantir que fique sempre "clicável" sobre o body */}
+      <div className="hidden md:flex absolute left-8 lg:left-10 top-1/2 -translate-y-1/2 flex-col gap-6 z-20">
         <SocialLinks />
       </div>
 
       {/* ── Hero Body ── */}
-      {/* flex-col no mobile, flex-row no md. Ajuste de paddings para não encostar nas bordas */}
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between flex-1 px-6 md:pl-28 lg:pl-36 md:pr-12 lg:pr-36 py-10 gap-8 md:gap-10 z-10">
 
         {/* Text block */}
