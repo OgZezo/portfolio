@@ -40,15 +40,12 @@ export default function AboutSection() {
     <section
       id="about"
       ref={ref as React.RefObject<HTMLElement>}
-      // overflow-x-hidden adicionado para segurar a animação anim-from-right no mobile
-      className="min-h-screen flex items-center relative px-6 md:px-16 lg:px-24 py-20 overflow-x-hidden"
+      className="min-h-screen flex items-center relative px-6 md:px-16 lg:px-24 py-20"
       style={{ backgroundColor: "#121211" }}
     >
       {/* ── Scroll Cue Right (role para cima) ── */}
       {!cueHidden && (
-        // Escondido em telas muito pequenas (hidden sm:block) para evitar sobreposição,
-        // ou reposicionado para não brigar com o texto
-        <div className="hidden sm:block absolute right-4 md:right-8 top-1/4 z-10">
+        <div className="absolute right-6 md:right-8 top-1/4">
           <p
             className={`scroll-cue scroll-cue-up${cueVisible ? " cue-visible" : ""}${cueBounce ? " cue-bounce" : ""} text-[#C1AE7C] text-[10px] tracking-[0.35em] uppercase select-none`}
             style={{
@@ -61,38 +58,32 @@ export default function AboutSection() {
         </div>
       )} 
 
-      {/* Container principal flex-col no mobile e flex-row no desktop */}
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 w-full max-w-6xl mx-auto z-10">
+      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-full max-w-6xl mx-auto">
 
         {/* Illustration — fade in com texto */}
-        {/* Limite de largura no mobile (max-w-[250px]) para não empurrar o layout */}
         <div
-          className={`${vis("right", "delay-100")} flex-shrink-0 w-full max-w-[250px] sm:max-w-[300px] md:max-w-md lg:max-w-lg mx-auto md:mx-0`}
-        >
-          <a href="#projetos" className="w-full h-full block" aria-label="About illustration">
-            <img src="/images/second-image.svg" alt="Ilustração Sobre Mim" className="w-full h-auto object-contain" />
+          className={`${vis("right", "delay-100")} flex-shrink-0`}>
+          <a href="" className="w-full h-full block" aria-label="About illustration">
+            {/* <img src="/images/about.png" alt="About" className="w-full h-full object-contain" /> */}
+            <img src="/images/second-image.svg" alt="vetor 2" />
           </a>
         </div>
 
         {/* Text — fade from right */}
-        {/* w-full para garantir que o texto respeite o grid flexível */}
-        <div className="flex-1 w-full flex flex-col items-center md:items-end">
+        <div className="flex-1">
           <h2
-            // Título centralizado no mobile e alinhado à direita no tablet/desktop
-            className={`${vis("right", "delay-200")} text-glow font-bold mb-4 md:mb-6 text-center md:text-right w-full`}
+            className={`${vis("right", "delay-200")} text-glow font-bold mb-6 text-right`}
             style={{
               fontFamily: "'Cal Sans', 'Fira Sans Condensed', sans-serif",
               color: "#ffffff",
-              fontSize: "clamp(2rem, 6vw, 4rem)", // Ajuste na escala fluida (5vw para 6vw)
-              lineHeight: "1.1",
+              fontSize: "clamp(2rem, 5vw, 4rem)",
             }}
           >
             &lt;<span style={{ color: "#FBD15B" }}>Mas quem é Jose?</span>&gt;
           </h2>
 
           <p
-            // text-left no mobile (melhor UX de leitura) e text-justify no md:
-            className={`${vis("right", "delay-400")} text-base md:text-lg leading-relaxed text-left sm:text-justify w-full`}
+            className={`${vis("right", "delay-400")} text-base md:text-lg leading-relaxed text-justify`}
             style={{ fontFamily: "'Fira Sans Condensed', sans-serif", color: "#ffffff" }}
           >
             <span style={{ color: "#FBD15B", fontWeight: 700 }}>LOREM IPSUM</span>{" "}
