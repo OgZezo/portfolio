@@ -86,16 +86,9 @@ export default function AboutSection() {
             className={`${vis("right", "delay-400")} text-base md:text-lg leading-relaxed text-justify`}
             style={{ fontFamily: "'Fira Sans Condensed', sans-serif", color: "#ffffff" }}
           >
-            <span style={{ color: "#FBD15B", fontWeight: 700 }}>LOREM IPSUM</span>{" "}
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software
-            like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+            <span style={{ color: "#FBD15B", fontWeight: 700 }}>Quem sou eu?</span>{" "}
+            Sou um programador, especializado em desenvolvimento web, com um amor profundo por criar experiências digitais incríveis. Desde cedo, sempre fui fascinado por tecnologia e pela capacidade de transformar ideias em realidade através do código. Minha jornada começou com a curiosidade de entender como os sites funcionavam, o que me levou a aprender mais sobre, e por conta própria, a me aprofundar no mundo do desenvolvimento web. Hoje, tenho experiência em diversas tecnologias e frameworks, e estou sempre buscando aprender mais para aprimorar minhas habilidades e entregar projetos de alta qualidade.
+            </p>
         </div>
       </div>
     </section>

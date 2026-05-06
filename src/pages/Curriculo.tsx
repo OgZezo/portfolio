@@ -23,9 +23,9 @@ export default function Curriculo() {
 
         {/* Container do Visualizador de PDF */}
         {/* Usamos h-[70vh] para ocupar uma boa parte da tela e manter a proporção */}
-        <div className="w-full max-w-4xl h-[60vh] md:h-[100vh] bg-[#D9D9D9] mb-12 shadow-2xl relative">
+        <div className="w-full max-w-4xl h-[70vh] md:h-[100vh] bg-[#D9D9D9] mb-12 shadow-2xl relative">
           <iframe
-            src="/arquivos_pdf/curriculo.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            src="/arquivos_pdf/Jose_M_Bandeira_CV.pdf#toolbar=0&navpanes=0&scrollbar=0"
             title="Visualização do Currículo"
             className="w-full h-full border-none"
           />
@@ -40,7 +40,7 @@ export default function Curriculo() {
           {/* Botão Real de Download */}
           {/* O atributo 'download' força o navegador a baixar o arquivo em vez de abri-lo */}
           <a
-            href="/arquivos_pdf/curriculo.pdf"
+            href="/arquivos_pdf/Jose_M_Bandeira_CV.pdf"
             download="Jose_M_Bandeira_CV.pdf"
             className="px-10 py-4 font-bold font-body text-[15px] tracking-widest uppercase border-[#fcc83b] bg-[#FBD15B] text-black hover:brightness-110 transition-all"
           >

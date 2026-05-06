@@ -8,7 +8,7 @@ interface SidebarProps {
 // Array de links para facilitar a manutenção
 const NAV_LINKS = [
   { label: "Início", to: "/" },
-  { label: "Quem eu sou?", to: "/sobremim" },
+  /* { label: "Quem eu sou?", to: "/sobremim" }, */ //----- PÁGINA DE SOBRE MIM VAI ESTAR INATIVA POR ENQUANTO -----
   /* { label: "Skills", to: "/skills" }, */   //----- PÁGINA DE SKILLS VAI SER FEITA DEPOIS -----
   { label: "Projetos", to: "/projetos" },
   { label: "Curriculo", to: "/curriculo" },

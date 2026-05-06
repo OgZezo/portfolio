@@ -9,7 +9,7 @@ import Curriculo from "./pages/Curriculo";
 import NotFound from "./pages/NotFound";
 import Contato from "./pages/Contato";
 import Projetos from "./pages/Projetos";
-import Sobremim from "./pages/SobreMim";
+/* import Sobremim from "./pages/SobreMim"; */ // Página inativa, mas mantida para referência futura
 import Projeto1 from "./pages/Projeto1";
 import Projeto2 from "./pages/Projeto2";    
 import Projeto3 from "./pages/Projeto3";
@@ -34,7 +34,7 @@ export default function App() {
         <Route path="/projetos" element={<Projetos />} />
         {/* Rota para página de todos os projetos */}
 
-        <Route path="/sobremim" element={<Sobremim />} />
+        {/* <Route path="/sobremim" element={<Sobremim />} /> */} {/* ROTA DESATIVADA MAS MANTIDA PARA REFERÊNCIA FUTURA */}
         {/* Rota para página de Sobre Mim */}
 
         <Route path="/projeto1" element={<Projeto1 />} />

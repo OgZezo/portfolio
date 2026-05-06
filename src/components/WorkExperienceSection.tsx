@@ -32,15 +32,8 @@ export default function WorkExperienceSection() {
             className={`${vis("left", "delay-300")} text-base md:text-lg leading-relaxed text-justify`}
             style={{ fontFamily: "'Fira Sans Condensed', sans-serif", color: "#ffffff" }}
           >
-            <span style={{ color: "#FBD15B", fontWeight: 700 }}>LOREM IPSUM</span>{" "}
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software
-            like Aldus PageMaker including versions of Lorem Ipsum.
+            <span style={{ color: "#FBD15B", fontWeight: 700 }}>Hoje, aos 21 anos</span>{" "}
+            tenho experiência o suficiente para ter desenvolvido soluções completas (especialmente na área jurídica), desde o planejamento até a implementação, de ferramentas como sistemas de gerenciamento de conteúdo, landing pages, ferramentas de automação, dashboards personalizados, entre outros projetos. Minha paixão por criar experiências digitais incríveis me impulsiona a continuar aprendendo e aprimorando minhas habilidades, sempre buscando entregar projetos de alta qualidade que atendam às necessidades dos usuários e superem suas expectativas.
           </p>
         </div>
 

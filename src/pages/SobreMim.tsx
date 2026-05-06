@@ -1,3 +1,6 @@
+
+/* PÁGINA INATIVA */
+
 import { useInView } from "../hooks/useInView";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -28,7 +31,7 @@ export default function SobreMim() {
             letterSpacing: "-0.01em" 
           }}
         >
-          &lt;<span className="text-[#FBD15B]">About me</span>&gt;
+          &lt;<span className="text-[#FBD15B]">Sobre mim</span>&gt;
         </h1>
       </header>
 
@@ -39,24 +42,10 @@ export default function SobreMim() {
         ref={ref as React.RefObject<HTMLElement>}
       >
         <p className={`${vis("left", "delay-300")}`}>
-          <span className="text-[#FBD15B] font-bold mr-1">LOREM IPSUM</span> 
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          <span style={{ color: "#FBD15B", fontWeight: 700 }}>LOREM IPSUM</span>{" "}
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
 
-        <p className={`${vis("left", "delay-300")}`}>
-          <span className="text-[#FBD15B] font-bold mr-1">LOREM IPSUM</span> 
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-
-         <p className={`${vis("left", "delay-300")}`}>
-          <span className="text-[#FBD15B] font-bold mr-1">LOREM IPSUM</span> 
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-
-         <p className={`${vis("left", "delay-300")}`}>
-          <span className="text-[#FBD15B] font-bold mr-1">LOREM IPSUM</span> 
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
       </section>
 
       <Footer />
