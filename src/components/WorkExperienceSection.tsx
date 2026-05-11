@@ -33,7 +33,7 @@ export default function WorkExperienceSection() {
             style={{ fontFamily: "'Fira Sans Condensed', sans-serif", color: "#ffffff" }}
           >
             <span style={{ color: "#FBD15B", fontWeight: 700 }}>Hoje, aos 21 anos</span>{" "}
-            tenho experiência o suficiente para ter desenvolvido soluções completas (especialmente na área jurídica), desde o planejamento até a implementação, de ferramentas como sistemas de gerenciamento de conteúdo, landing pages, ferramentas de automação, dashboards personalizados, entre outros projetos. Minha paixão por criar experiências digitais incríveis me impulsiona a continuar aprendendo e aprimorando minhas habilidades, sempre buscando entregar projetos de alta qualidade que atendam às necessidades dos usuários e superem suas expectativas.
+            tenho experiência suficiente para ter desenvolvido soluções completas (especialmente na área jurídica), desde o planejamento até a implementação, de ferramentas como sistemas de gerenciamento de conteúdo, landing pages, ferramentas de automação, dashboards personalizados, entre outros projetos. Minha paixão por criar experiências digitais incríveis me impulsiona a continuar aprendendo e aprimorando minhas habilidades, sempre buscando entregar projetos de alta qualidade que atendam às necessidades dos usuários e superem suas expectativas.
           </p>
         </div>
 
